@@ -50,7 +50,7 @@ function drawCalendar(dateData){
 
   var day = d3.timeFormat("%w"),
       week = d3.timeFormat("%U"),
-      format = d3.timeFormat("%m/%d/%Y"),
+      format = d3.timeFormat("%-m/%-d/%Y"),
       titleFormat = d3.utcFormat("%a, %d-%b");
       monthName = d3.timeFormat("%B"),
       months= d3.timeMonth.range(d3.timeMonth.floor(minDate), maxDate);
