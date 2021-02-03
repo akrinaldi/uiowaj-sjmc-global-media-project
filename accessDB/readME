@@ -1,0 +1,47 @@
+Please create a new folder with your changes.
+
+***BEFORE CLEANING ANYTHING*** 
+
+There is an Excel file in this OneDrive directory. Please indicate on that Excel file which ISSN and year you are cleaning/uploading so we don’t have people doing the same files. 
+
+ 
+
+Steps for cleaning data: 
+
+1) Convert from JSON to CSV 
+
+Can be done with a converter. Feel free to use JSON to CSV Converter Online. It’s $10 a month to convert large data, but some of the files are small enough to convert for free. 
+
+2) Clean CSV file 
+
+Delete all unnecessary cells and replace the headers with the agreed upon parameters. 
+
+We require the following parameters: 
+
+Article_URL 
+Article_Title 
+Article_Author 
+Article_Author_Country 
+Article_Author_City 
+Article_Author_University 
+Article_Volume 
+Article_Issue 
+Article_Pages 
+Article_Date 
+Article_DOI 
+Article_CitedBy 
+Article_Type 
+Article_OA 
+Journal_Name 
+Journal_ISSN 
+Journal_eISSN 
+
+After doing this, save the file as an Excel file, NOT a CSV.  
+
+3) Push the Excel file to Access 
+
+Import the Excel table into Access, creating a table. Add all additional data. Each table should contain all years but only for one journal. For each new journal, create a new table. 
+
+4) Add your table to the master Access database (GMS_DB) on OneDrive 
+
+This will help us build up a master database without having to merge all of our individual databases together. 
